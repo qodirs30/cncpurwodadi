@@ -86,8 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (icon) {
         icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
       }
-      // Lock body scroll when menu is open
-      document.body.style.overflow = isOpen ? 'hidden' : '';
     });
 
     document.querySelectorAll('.nav-link').forEach(link => {
@@ -95,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         navLinks.classList.remove('active');
         const icon = menuToggle.querySelector('i');
         if (icon) icon.className = 'fa-solid fa-bars';
-        document.body.style.overflow = '';
       });
     });
   }
