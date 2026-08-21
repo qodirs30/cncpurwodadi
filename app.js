@@ -111,11 +111,15 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnSendEstimatorWA = document.getElementById('btnSendEstimatorWA');
 
   const materialRates = {
-    'Plat Besi (Iron Plate)': 15,
+    'Plat Besi / Mild Steel': 15,
     'Stainless Steel': 35,
-    'ACP (Aluminum Composite)': 20,
+    'Aluminium': 30,
+    'Tembaga / Kuningan': 40,
+    'Kayu / MDF / Multiplek': 16,
+    'Acrylic / Akrilik': 28,
     'PVC Board': 18,
-    'Akrilik (Acrylic)': 28
+    'ACP (Aluminum Composite Panel)': 20,
+    'Foam Board / Sintetis': 15
   };
 
   function toggleCustomInput(select, customInput) {
@@ -175,13 +179,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (btnSendEstimatorWA) {
       const nl = encodeURIComponent('\n');
       const message =
-        `Halo CNC Purwodadi! Saya tertarik konsultasi/order cutting:${nl}` +
+        `Halo cncpurwodadi.com! Saya tertarik konsultasi/order cutting:${nl}` +
         `• Material: ${selectedMatName}${nl}` +
         `• Ukuran: ${length} cm × ${width} cm (${area} cm²)${nl}` +
         `• Detail Motif: ${complexityText || calcComplexity.options[calcComplexity.selectedIndex]?.text}${nl}` +
         `• Perkiraan Biaya: ${formattedPrice}${nl}${nl}` +
         `Mohon info lebih lanjut dan penawaran resminya. Terima kasih.`;
-      btnSendEstimatorWA.href = `https://wa.me/6281234567890?text=${message}`;
+      btnSendEstimatorWA.href = `https://wa.me/6285293291425?text=${message}`;
     }
   }
 

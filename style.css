@@ -858,6 +858,230 @@ button { cursor: pointer; font-family: var(--font); }
   padding: var(--sp-5);
 }
 
+/* ── HERO FEATURE TAGS ────────────────────────────────────────────────────── */
+.hero-feature-pills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-3);
+  flex-wrap: wrap;
+  margin-bottom: var(--sp-6);
+}
+
+.feat-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sp-2);
+  padding: 6px 14px;
+  border-radius: var(--r-full);
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--glass-border);
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.feat-tag i { color: var(--accent); }
+
+/* ── CNC MACHINES GRID (FLYER ALIGNED) ───────────────────────────────────── */
+.cnc-machines-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-6);
+}
+
+.machine-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--glass-border-hover);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: all var(--duration) var(--ease);
+}
+
+.machine-card:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.machine-badge-tag {
+  align-self: flex-start;
+  padding: 4px 12px;
+  border-radius: var(--r-full);
+  background: rgba(249, 115, 22, 0.15);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  color: var(--accent-hover);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  margin-bottom: var(--sp-3);
+}
+
+.machine-badge-tag.non-metal {
+  background: rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
+  color: #60a5fa;
+}
+
+.machine-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--sp-2);
+}
+
+.machine-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin-bottom: var(--sp-5);
+}
+
+.machine-material-box {
+  background: var(--bg-elevated);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--r-md);
+  padding: var(--sp-4);
+  margin-top: auto;
+}
+
+.box-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: var(--sp-3);
+  font-weight: 700;
+}
+
+.material-check-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-2);
+  font-size: 0.82rem;
+  color: var(--text-primary);
+}
+
+.material-check-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.material-check-list li i {
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
+/* ── 3-BLOCK INFOGRAPHICS (MATERIAL, KEUNGGULAN, APLIKASI) ────────────────── */
+.info-blocks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.info-block-card {
+  background: var(--bg-surface);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--r-lg);
+  padding: var(--sp-6);
+  transition: all var(--duration) var(--ease);
+}
+
+.info-block-card.highlight {
+  border-color: rgba(249, 115, 22, 0.3);
+  background: rgba(249, 115, 22, 0.04);
+}
+
+.info-block-card:hover {
+  background: var(--bg-surface-hover);
+  border-color: var(--glass-border-hover);
+  transform: translateY(-2px);
+}
+
+.info-block-head {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-bottom: var(--sp-4);
+  padding-bottom: var(--sp-3);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.info-icon {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.info-block-head h3 {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+}
+
+.info-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-2);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--sp-2);
+}
+
+.info-list li i {
+  color: var(--accent);
+  font-size: 0.72rem;
+}
+
+/* ── CTA BANNER SECTION ───────────────────────────────────────────────────── */
+.cta-banner-section {
+  padding: var(--sp-12) 0;
+}
+
+.cta-banner-card {
+  background: linear-gradient(135deg, rgba(249, 115, 22, 0.12) 0%, rgba(12, 14, 18, 0.85) 100%);
+  border: 1px solid rgba(249, 115, 22, 0.3);
+  border-radius: var(--r-xl);
+  padding: var(--sp-8) var(--sp-10);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-6);
+  box-shadow: 0 10px 30px rgba(249, 115, 22, 0.1);
+}
+
+.cta-title {
+  font-size: 1.6rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  color: var(--text-primary);
+}
+
+.cta-sub {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.btn-cta-lg {
+  padding: 14px 28px;
+  font-size: 0.92rem;
+  flex-shrink: 0;
+}
+
 /* ── GSAP SCROLL REVEAL ───────────────────────────────────────────────────── */
 [data-reveal] {
   opacity: 0;
@@ -891,10 +1115,27 @@ button { cursor: pointer; font-family: var(--font); }
   .hero-title { font-size: 2.2rem; }
   .estimator-wrapper { grid-template-columns: 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
+  .cnc-machines-grid { grid-template-columns: 1fr; }
+  .info-blocks-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 768px) {
   body { padding: 0; }
+
+  .cnc-machines-grid,
+  .info-blocks-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-banner-card {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--sp-6) var(--sp-4);
+  }
+
+  .material-check-list {
+    grid-template-columns: 1fr;
+  }
 
   .main-glass-container {
     margin: 0;
