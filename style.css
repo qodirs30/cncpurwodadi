@@ -10,15 +10,15 @@
   /* Palette — near-black industrial */
   --bg-deep:        #030405;
   --bg-base:        #070809;
-  --bg-elevated:    #0c0e11;
-  --bg-surface:     rgba(255, 255, 255, 0.04);
-  --bg-surface-hover: rgba(255, 255, 255, 0.07);
+  --bg-elevated:    rgba(12, 14, 18, 0.70);
+  --bg-surface:     rgba(255, 255, 255, 0.05);
+  --bg-surface-hover: rgba(255, 255, 255, 0.09);
 
   /* Glass */
-  --glass-bg:       rgba(10, 12, 16, 0.82);
-  --glass-blur:     blur(20px);
-  --glass-border:   rgba(255, 255, 255, 0.07);
-  --glass-border-hover: rgba(255, 255, 255, 0.12);
+  --glass-bg:       rgba(8, 10, 15, 0.50);
+  --glass-blur:     blur(16px);
+  --glass-border:   rgba(255, 255, 255, 0.10);
+  --glass-border-hover: rgba(255, 255, 255, 0.18);
 
   /* Brand accent */
   --accent:         #f97316;
@@ -112,8 +112,8 @@ button { cursor: pointer; font-family: var(--font); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.38;
-  filter: brightness(0.7) contrast(1.1) saturate(0.9);
+  opacity: 0.55;
+  filter: brightness(0.85) contrast(1.1) saturate(1.0);
   transform: scale(1.03);
 }
 
@@ -121,8 +121,8 @@ button { cursor: pointer; font-family: var(--font); }
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(3,4,5,0.6) 0%, rgba(3,4,5,0.2) 35%, rgba(3,4,5,0.15) 55%, rgba(3,4,5,0.7) 100%),
-    radial-gradient(ellipse at 50% 20%, rgba(249,115,22,0.03) 0%, transparent 50%);
+    linear-gradient(180deg, rgba(3,4,5,0.40) 0%, rgba(3,4,5,0.12) 35%, rgba(3,4,5,0.08) 55%, rgba(3,4,5,0.45) 100%),
+    radial-gradient(ellipse at 50% 20%, rgba(249,115,22,0.04) 0%, transparent 50%);
 }
 
 /* ── MAIN GLASS CONTAINER ─────────────────────────────────────────────────── */
@@ -152,16 +152,16 @@ button { cursor: pointer; font-family: var(--font); }
   z-index: 100;
   margin: calc(var(--sp-12) * -1) calc(var(--sp-12) * -1) 0;
   padding: var(--sp-4) var(--sp-12);
-  background: rgba(10, 12, 16, 0.75);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background: rgba(8, 10, 15, 0.35);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--glass-border);
   border-radius: var(--r-xl) var(--r-xl) 0 0;
   transition: background var(--duration) var(--ease);
 }
 
 .navbar.scrolled {
-  background: rgba(10, 12, 16, 0.92);
+  background: rgba(8, 10, 15, 0.65);
 }
 
 .brand-name {
@@ -341,14 +341,14 @@ button { cursor: pointer; font-family: var(--font); }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.45;
-  filter: brightness(0.75) contrast(1.1);
+  opacity: 0.65;
+  filter: brightness(0.85) contrast(1.1);
 }
 
 .hero-video-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(7, 9, 13, 0.72) 0%, rgba(7, 9, 13, 0.85) 100%);
+  background: linear-gradient(180deg, rgba(7, 9, 13, 0.40) 0%, rgba(7, 9, 13, 0.60) 100%);
 }
 
 .hero-content {
@@ -913,19 +913,19 @@ button { cursor: pointer; font-family: var(--font); }
     padding: var(--sp-12) 0;
   }
 
-  /* Mobile video: visible & high contrast */
+  /* Mobile video: high clarity & transparency */
   .bg-video-element {
-    opacity: 0.40;
-    filter: brightness(0.75) contrast(1.1) saturate(0.9);
+    opacity: 0.50;
+    filter: brightness(0.80) contrast(1.1) saturate(0.9);
   }
 
   .hero-video-element {
-    opacity: 0.55;
-    filter: brightness(0.8) contrast(1.15);
+    opacity: 0.70;
+    filter: brightness(0.85) contrast(1.15);
   }
 
   .hero-video-overlay {
-    background: linear-gradient(180deg, rgba(7, 9, 13, 0.65) 0%, rgba(7, 9, 13, 0.82) 100%);
+    background: linear-gradient(180deg, rgba(7, 9, 13, 0.38) 0%, rgba(7, 9, 13, 0.58) 100%);
   }
 
   .brand-logo {
