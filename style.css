@@ -7,32 +7,15 @@
 
 /* ── DESIGN TOKENS ────────────────────────────────────────────────────────── */
 :root {
-/* Light Mode Clean Industrial (Liquid Glass) */
-:root {
-  /* Palette — Pure White & Light Gray */
-  --bg-deep:        #ffffff;
-  --bg-base:        #f8fafc;
-  --bg-elevated:    rgba(255, 255, 255, 0.85);
-  --bg-surface:     rgba(255, 255, 255, 0.6);
-  --bg-surface-hover: rgba(241, 245, 249, 0.8);
-
-  /* Glass - Liquid Effect */
-  --glass-bg:       rgba(255, 255, 255, 0.75);
-  --glass-blur:     blur(20px) saturate(180%);
-  --glass-border:   rgba(255, 255, 255, 0.5);
-  --glass-border-hover: rgba(255, 255, 255, 0.8);
-
-  /* Brand accent */
-  --accent:         #ea580c;
-  --accent-hover:   #c2410c;
-  --accent-subtle:  rgba(234, 88, 12, 0.1);
-  --accent-glow:    rgba(234, 88, 12, 0.15);
-  --accent-ring:    rgba(234, 88, 12, 0.2);
-
-  /* Text - Clean Dark */
-  --text-primary:   #0f172a;
-  --text-secondary: #475569;
-  --text-muted:     #94a3b8;
+.bg-image-hero {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: url('logo cnc ori.png') no-repeat center center;
+  background-size: 200px;
+  opacity: 0.1;
+  z-index: -1;
+}
 
   /* WhatsApp */
   --wa-green:       #25d366;
