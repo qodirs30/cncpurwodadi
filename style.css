@@ -7,30 +7,30 @@
 
 /* ── DESIGN TOKENS ────────────────────────────────────────────────────────── */
 :root {
-  /* Palette — near-black industrial */
-  --bg-deep:        #030405;
-  --bg-base:        #070809;
-  --bg-elevated:    rgba(12, 14, 18, 0.70);
-  --bg-surface:     rgba(255, 255, 255, 0.05);
-  --bg-surface-hover: rgba(255, 255, 255, 0.09);
+  /* Palette — Light Industrial */
+  --bg-deep:        #ffffff;
+  --bg-base:        #f9fafb;
+  --bg-elevated:    rgba(240, 240, 240, 0.70);
+  --bg-surface:     rgba(0, 0, 0, 0.05);
+  --bg-surface-hover: rgba(0, 0, 0, 0.09);
 
   /* Glass */
-  --glass-bg:       rgba(8, 10, 15, 0.50);
+  --glass-bg:       rgba(255, 255, 255, 0.50);
   --glass-blur:     blur(16px);
-  --glass-border:   rgba(255, 255, 255, 0.10);
-  --glass-border-hover: rgba(255, 255, 255, 0.18);
+  --glass-border:   rgba(0, 0, 0, 0.10);
+  --glass-border-hover: rgba(0, 0, 0, 0.18);
 
   /* Brand accent */
-  --accent:         #f97316;
-  --accent-hover:   #fb923c;
+  --accent:         #c2410c;
+  --accent-hover:   #ea580c;
   --accent-subtle:  rgba(249, 115, 22, 0.12);
   --accent-glow:    rgba(249, 115, 22, 0.20);
   --accent-ring:    rgba(249, 115, 22, 0.35);
 
   /* Text */
-  --text-primary:   #ededed;
-  --text-secondary: #9ca3af;
-  --text-muted:     #6b7280;
+  --text-primary:   #111827;
+  --text-secondary: #4b5563;
+  --text-muted:     #9ca3af;
 
   /* WhatsApp */
   --wa-green:       #25d366;
