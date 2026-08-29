@@ -232,7 +232,7 @@ button { cursor: pointer; font-family: var(--font); }
 .section:last-of-type { border-bottom: none; }
 
 /* Alternating background colors for sections (Sabeela.id style) */
-#layanan, #portofolio, .footer {
+#layanan, #portofolio {
   background-color: var(--bg-elevated);
 }
 
@@ -361,7 +361,7 @@ button { cursor: pointer; font-family: var(--font); }
   z-index: 0;
   overflow: hidden;
   border-radius: 0;
-  background-image: url('hero-bg-cnc.jpg');
+  background-image: url('ukir plat besi api.jpg');
   background-size: cover;
   background-position: center;
   opacity: 0.70;
@@ -795,12 +795,16 @@ button { cursor: pointer; font-family: var(--font); }
 
 /* ── FOOTER ───────────────────────────────────────────────────────────────── */
 .footer {
-  padding-top: var(--sp-8);
+  background: transparent;
+  border-top: 1px solid var(--glass-border);
+  padding: var(--sp-6) var(--sp-4);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  text-align: center;
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
 }
 
 .footer a {
@@ -1130,10 +1134,12 @@ button { cursor: pointer; font-family: var(--font); }
 /* ── RESPONSIVE ───────────────────────────────────────────────────────────── */
 @media (max-width: 1024px) {
   .main-glass-container {
-    padding: var(--sp-8) var(--sp-6);
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
   .navbar {
-    margin: calc(var(--sp-8) * -1) calc(var(--sp-6) * -1) 0;
+    margin: 0;
     padding: var(--sp-4) var(--sp-6);
   }
   .hero-grid { grid-template-columns: 1fr; }
@@ -1230,12 +1236,18 @@ button { cursor: pointer; font-family: var(--font); }
   }
 
   /* Hero Mobile Layout (Full Bleed Edge-to-Edge) */
+  .main-glass-container {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+
   .hero-section {
-    width: calc(100% + 32px);
-    margin-left: -16px;
-    margin-right: -16px;
-    border-radius: 0;
-    padding: 100px 16px 44px;
+    width: 100% !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    border-radius: 0 !important;
+    padding: 96px 16px 44px;
     margin-top: 0;
     text-align: center;
   }
