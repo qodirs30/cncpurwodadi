@@ -1272,13 +1272,17 @@ button { cursor: pointer; font-family: var(--font); }
 
   .hero-feature-pills {
     justify-content: center;
-    gap: 6px;
+    gap: 8px;
     margin-bottom: 24px;
   }
 
   .feat-tag {
-    font-size: 0.72rem;
-    padding: 5px 11px;
+    font-size: 0.74rem;
+    padding: 6px 12px;
+  }
+
+  .hide-mobile {
+    display: none !important;
   }
 
   .hero-actions {
