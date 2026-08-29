@@ -1328,7 +1328,8 @@ button { cursor: pointer; font-family: var(--font); }
 
   /* Sections & Components */
   .section {
-    padding: 44px 0;
+    padding: 44px 16px;
+    box-sizing: border-box;
   }
 
   .section-title { font-size: 1.4rem; }
