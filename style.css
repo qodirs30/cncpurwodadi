@@ -1229,11 +1229,20 @@ button { cursor: pointer; font-family: var(--font); }
     color: var(--accent);
   }
 
-  /* Hero Mobile Layout */
+  /* Hero Mobile Layout (Full Bleed Edge-to-Edge) */
   .hero-section {
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0;
     padding: 100px 16px 44px;
     margin-top: 0;
     text-align: center;
+  }
+
+  .hero-image-bg,
+  .hero-image-overlay {
+    border-radius: 0;
   }
 
   .hero-title {
